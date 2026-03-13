@@ -1,0 +1,173 @@
+{
+  "identity": {
+    "name": "The Modern Harvest",
+    "mission": "Bridging the gap between soil and table with transparency and trust.",
+    "persona": "The Ethical Curator: Grounded, authentic, yet efficiently modern.",
+    "archetype": "Organic & Earthy (Modernized)"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Outfit, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "installation_command": "npm install @fontsource/playfair-display @fontsource/outfit @fontsource/jetbrains-mono",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-3xl md:text-4xl font-medium",
+      "body_lg": "text-lg md:text-xl leading-relaxed text-muted-foreground",
+      "body_base": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm tracking-wide uppercase text-muted-foreground/80"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "hex": "#2F5233",
+        "name": "Dark Moss Green",
+        "usage": "Primary Buttons, Active States, Key Headings"
+      },
+      "secondary": {
+        "hex": "#F5F5F0",
+        "name": "Warm Sand",
+        "usage": "Page Backgrounds, Secondary Buttons"
+      },
+      "accent": {
+        "hex": "#B05C3C",
+        "name": "Terracotta",
+        "usage": "Call to Actions (CTA), Sale Badges, Highlights"
+      },
+      "muted": {
+        "hex": "#E0E5DF",
+        "name": "Sage Grey",
+        "usage": "Borders, Dividers, Inactive Icons"
+      },
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#1A1C1A"
+      },
+      "text": {
+        "primary": "#1A1C1A",
+        "secondary": "#525252"
+      }
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "harvest": {
+          "green": "#2F5233",
+          "sand": "#F5F5F0",
+          "clay": "#B05C3C",
+          "mist": "#E0E5DF"
+        }
+      }
+    }
+  },
+  "layout_strategy": {
+    "grid_system": "Bento Grid Protocol",
+    "modes": {
+      "marketing": {
+        "type": "Mode A (Tetris)",
+        "columns": "grid-cols-1 md:grid-cols-12",
+        "gap": "gap-8 md:gap-12",
+        "padding": "p-8 md:p-12"
+      },
+      "dashboard": {
+        "type": "Mode B (High Density)",
+        "columns": "grid-cols-1 md:grid-cols-4",
+        "gap": "gap-6",
+        "padding": "p-6"
+      },
+      "marketplace": {
+        "type": "Responsive Grid",
+        "columns": "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+        "gap": "gap-8"
+      }
+    },
+    "spacing": {
+      "section_vertical": "py-24 md:py-32",
+      "container_internal": "p-6 md:p-8",
+      "element_gap": "gap-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2F5233] text-white hover:bg-[#244026] rounded-full px-8 py-3 font-medium transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5",
+      "secondary": "bg-[#F5F5F0] text-[#2F5233] hover:bg-[#E0E5DF] rounded-full px-8 py-3 font-medium transition-all duration-300",
+      "outline": "border-2 border-[#2F5233] text-[#2F5233] hover:bg-[#2F5233] hover:text-white rounded-full px-8 py-3 font-medium transition-all duration-300"
+    },
+    "cards": {
+      "product": "group relative bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 border border-transparent hover:border-[#E0E5DF]",
+      "dashboard": "bg-white rounded-xl shadow-sm border border-[#E0E5DF] p-6",
+      "feature": "bg-[#F5F5F0] rounded-2xl p-8 hover:bg-white hover:shadow-md transition-all duration-300"
+    },
+    "inputs": {
+      "style": "bg-white border-[#E0E5DF] focus:border-[#2F5233] focus:ring-1 focus:ring-[#2F5233] rounded-lg px-4 py-3 outline-none transition-all duration-200"
+    }
+  },
+  "visual_enhancers": {
+    "textures": {
+      "grain": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    },
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(47, 82, 51, 0.08)",
+      "hover": "0 10px 40px -4px rgba(47, 82, 51, 0.12)"
+    },
+    "border_radius": {
+      "default": "rounded-lg",
+      "card": "rounded-xl",
+      "button": "rounded-full"
+    }
+  },
+  "motion": {
+    "libraries": [
+      "framer-motion"
+    ],
+    "principles": {
+      "hover": "scale: 1.02, transition: { duration: 0.2, ease: 'easeOut' }",
+      "page_load": "opacity: 0, y: 20 -> opacity: 1, y: 0 (staggered)",
+      "scroll": "Use Lenis for smooth scrolling (MANDATORY)"
+    },
+    "install_commands": "npm install framer-motion @studio-freight/react-lenis"
+  },
+  "images": {
+    "hero": {
+      "main": "https://images.unsplash.com/photo-1679082310270-4fdaf3c67a7c",
+      "alt": "Sun setting over a lush green farm field",
+      "description": "Used for the main hero background to evoke warmth and organic growth."
+    },
+    "farmer_persona": {
+      "main": "https://images.unsplash.com/photo-1690067698032-7b966be1d56e",
+      "alt": "Farmer holding a box of fresh vegetables",
+      "description": "Used for the 'Meet the Farmers' section or Farmer Dashboard profile."
+    },
+    "products": {
+      "vegetables_bg": "https://images.unsplash.com/photo-1754891144113-8a8d092a7dbf",
+      "apple": "https://images.unsplash.com/photo-1613061527119-56ad37b8a581",
+      "carrot": "https://images.unsplash.com/photo-1741515044901-58696421d24a",
+      "milk": "https://images.unsplash.com/photo-1576186726188-c9d70843790f",
+      "eggs": "https://images.unsplash.com/photo-1635843086739-624d71f440b3"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, rounded caps"
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for dark colors. Use solid #2F5233.",
+    "Do NOT center align the app container. No .App { text-align: center }.",
+    "Use 'sonner' for toasts.",
+    "Use 'recharts' for data visualization (Farmer Dashboard).",
+    "All interactive elements MUST have data-testid attributes.",
+    "Backgrounds should never be purely white (#FFFFFF) in large sections; use Warm Sand (#F5F5F0) to break monotony.",
+    "Images on mobile must not exceed 80vh height."
+  ],
+  "instructions_to_main_agent": [
+    "1. Install dependencies: npm install framer-motion clsx tailwind-merge lucide-react sonner recharts @studio-freight/react-lenis",
+    "2. Update tailwind.config.js to include the custom 'harvest' color palette.",
+    "3. Create a 'Layout' component that wraps the app with Lenis scroll smoothing.",
+    "4. Build the 'Hero' section using the Bento Grid Mode A.",
+    "5. Use the provided image URLs for placeholders. Do not leave empty boxes.",
+    "6. Ensure all forms (Login, Signup, Checkout) use Shadcn UI components but styled with the 'inputs' style defined above."
+  ]
+}
