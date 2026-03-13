@@ -25,7 +25,7 @@ function resolveImportPath(source, fromFile) {
   if (RESOLVE_CACHE.has(cacheKey)) return RESOLVE_CACHE.get(cacheKey);
 
   let base;
-  if (source.startsWith("@/")) {
+  if (source.startsWith("../")) {
     base = path.join(SRC_ALIAS, source.slice(2));
   } else if (source.startsWith("./") || source.startsWith("../")) {
     base = path.resolve(path.dirname(fromFile), source);

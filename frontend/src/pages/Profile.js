@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layout } from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { Card, CardContent } from '@/components/ui/card';
+import { Layout } from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { Card, CardContent } from '../components/ui/card';
 
 const Profile = () => {
   const { user } = useAuth();

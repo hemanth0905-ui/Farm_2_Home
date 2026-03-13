@@ -1,27 +1,27 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from '@/context/AuthContext';
-import { ProtectedRoute } from '@/components/ProtectedRoute';
-import { Toaster } from '@/components/ui/sonner';
+import { AuthProvider } from '../context/AuthContext';
+import { ProtectedRoute } from '../components/ProtectedRoute';
+import { Toaster } from '../components/ui/sonner';
 
-import Home from '@/pages/Home';
-import Login from '@/pages/Login';
-import Register from '@/pages/Register';
-import Products from '@/pages/Products';
-import ProductDetails from '@/pages/ProductDetails';
-import Cart from '@/pages/Cart';
-import Checkout from '@/pages/Checkout';
-import Orders from '@/pages/Orders';
-import Profile from '@/pages/Profile';
-import Messages from '@/pages/Messages';
+import Home from '../pages/Home';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
+import Products from '../pages/Products';
+import ProductDetails from '../pages/ProductDetails';
+import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
+import Orders from '../pages/Orders';
+import Profile from '../pages/Profile';
+import Messages from '../pages/Messages';
 
-import FarmerDashboard from '@/pages/farmer/Dashboard';
-import FarmerProducts from '@/pages/farmer/Products';
+import FarmerDashboard from '../pages/farmer/Dashboard';
+import FarmerProducts from '../pages/farmer/Products';
 
-import ConsumerDashboard from '@/pages/consumer/Dashboard';
+import ConsumerDashboard from '../pages/consumer/Dashboard';
 
-import AdminDashboard from '@/pages/admin/Dashboard';
-import AdminFarmers from '@/pages/admin/Farmers';
+import AdminDashboard from '../pages/admin/Dashboard';
+import AdminFarmers from '../pages/admin/Farmers';
 
 function App() {
   return (

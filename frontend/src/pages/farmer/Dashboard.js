@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import api from '../utils/api';
 import { Package, TrendingUp, ShoppingBag, Plus } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 

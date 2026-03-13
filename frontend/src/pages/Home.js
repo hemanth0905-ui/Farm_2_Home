@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import api from '../utils/api';
 import { ArrowRight, Leaf, TrendingDown, Star, ShoppingBag, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 

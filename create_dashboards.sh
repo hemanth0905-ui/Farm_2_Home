@@ -4,10 +4,10 @@
 cat > /app/frontend/src/pages/farmer/Dashboard.js << 'EOF'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import api from '../utils/api';
 import { Package, TrendingUp, ShoppingBag, Plus } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -120,17 +120,17 @@ EOF
 # Farmer Products Page
 cat > /app/frontend/src/pages/farmer/Products.js << 'EOF'
 import React, { useEffect, useState } from 'react';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { Checkbox } from '../components/ui/checkbox';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../components/ui/dialog';
 import { toast } from 'sonner';
-import api from '@/utils/api';
+import api from '../utils/api';
 import { Plus, Edit, Trash2 } from 'lucide-react';
 
 const FarmerProducts = () => {
@@ -356,10 +356,10 @@ EOF
 cat > /app/frontend/src/pages/consumer/Dashboard.js << 'EOF'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import api from '../utils/api';
 import { Package, ShoppingBag } from 'lucide-react';
 
 const ConsumerDashboard = () => {
@@ -462,10 +462,10 @@ EOF
 cat > /app/frontend/src/pages/admin/Dashboard.js << 'EOF'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import api from '../utils/api';
 import { Users, Package, ShoppingBag, TrendingUp, AlertCircle } from 'lucide-react';
 
 const AdminDashboard = () => {
@@ -591,12 +591,12 @@ EOF
 # Admin Farmers Page
 cat > /app/frontend/src/pages/admin/Farmers.js << 'EOF'
 import React, { useEffect, useState } from 'react';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { toast } from 'sonner';
-import api from '@/utils/api';
+import api from '../utils/api';
 import { CheckCircle, XCircle } from 'lucide-react';
 
 const AdminFarmers = () => {

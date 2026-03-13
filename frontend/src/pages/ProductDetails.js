@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Layout } from '../components/Layout';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
 import { toast } from 'sonner';
-import api from '@/utils/api';
-import { useAuth } from '@/context/AuthContext';
+import api from '../utils/api';
+import { useAuth } from '../context/AuthContext';
 import { Star, Leaf, Package, TrendingDown, MessageSquare, ShoppingCart } from 'lucide-react';
 
 const ProductDetails = () => {

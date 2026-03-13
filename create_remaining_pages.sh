@@ -4,13 +4,13 @@
 cat > /app/frontend/src/pages/Checkout.js << 'EOF'
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Layout } from '@/components/Layout';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Layout } from '../components/Layout';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
 import { toast } from 'sonner';
-import api from '@/utils/api';
+import api from '../utils/api';
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -196,10 +196,10 @@ echo "Checkout page created"
 # Orders Page
 cat > /app/frontend/src/pages/Orders.js << 'EOF'
 import React, { useEffect, useState } from 'react';
-import { Layout } from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import api from '@/utils/api';
+import { Layout } from '../components/Layout';
+import { Card, CardContent } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import api from '../utils/api';
 import { Package } from 'lucide-react';
 
 const Orders = () => {
@@ -307,7 +307,7 @@ echo "Orders page created"
 # Messages and Profile pages
 cat > /app/frontend/src/pages/Messages.js << 'EOF'
 import React from 'react';
-import { Layout } from '@/components/Layout';
+import { Layout } from '../components/Layout';
 
 const Messages = () => {
   return (
@@ -325,9 +325,9 @@ EOF
 
 cat > /app/frontend/src/pages/Profile.js << 'EOF'
 import React from 'react';
-import { Layout } from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { Card, CardContent } from '@/components/ui/card';
+import { Layout } from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { Card, CardContent } from '../components/ui/card';
 
 const Profile = () => {
   const { user } = useAuth();
